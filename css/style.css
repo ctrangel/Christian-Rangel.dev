@@ -15,6 +15,13 @@ body {
   font-weight: 700;
   margin: 1.5rem 0 0 1rem;
 }
+#name-nav:hover {
+  color: #000000;
+  font-size: 3rem;
+  transition-property: font-size;
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
 
 h1,
 h2 {
@@ -133,26 +140,7 @@ main {
   border-color: transparent transparent #fff transparent;
 }
 
-#arrow {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #333;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  text-align: center;
-  line-height: 50px;
-  color: #fff;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-}
 
-#arrow:hover {
-  background-color: #555;
-}
 
 
 .material-symbols-outlined {
@@ -171,10 +159,54 @@ main {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.8);
   }
   100% {
     transform: scale(1);
   }
+}
+.side-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  right: 100vh;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-out;
+}
+.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+}
+
+#ppu:hover + .side-img {
+  opacity: 1;
+  transition: all ease-in-out 1s;
+}
+#major:hover + .side-img {
+  opacity: 1;
+  transition: all ease-in-out 1s;
+}
+#me:hover + .side-img {
+  opacity: 1;
+  transition: all ease-in-out 1s;
+}
+
+#about-me-heading {
+  font-size: 8rem;
+}
+#about-me-heading:hover {
+  color: #000000;
+  font-size: 9rem;
+  transition-property: font-size;
+  transition-duration: 0.8s;
+  cursor: default;
+}
+#about-me-summary {
+  color: rgb(71, 71, 71);
 }
 
