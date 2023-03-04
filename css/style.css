@@ -9,7 +9,7 @@ body {
   font-family: "Alata", sans-serif;
   background: #b1f1e1;
 }
-
+/* ------------------------------------------------ Nav Bar ------------------------------------ */
 #name {
   font-size: 1.5rem;
   font-weight: 700;
@@ -25,39 +25,8 @@ body {
 #name-nav {
   transition: 0.5s;
 }
-
-h1,
-h2 {
-  font-size: 2rem;
-  font-weight: 300;
-  display: inline-block;
-  padding-right: 20px;
-  font-family: "Teko", sans-serif;
-}
-h1:hover,
-h2:hover {
-  color: #000000;
-  font-size: 3rem;
-  transition-property: font-size;
-  transition-duration: 0.8s;
-  cursor: pointer;
-
-}
-
-.main-text {
-    font-size: 5rem;
-    font-weight: 300;
-    display: inline-block;
-    padding-right: 20px;
-    font-family: "Teko", sans-serif;
-    transition: 1s ease;
-}
-
-.main-text:hover {
-  color: rgb(245, 245, 189);
-  font-size: 7rem;
-  transition-property: font-size;
-  transition-duration: 0.8s;
+#title {
+  transition: ease 0.5s;
 }
 
 #nav-bar {
@@ -75,7 +44,7 @@ a {
   text-decoration: none;
 }
 a {
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 .nav-item {
   display: inline-block;
@@ -103,9 +72,42 @@ a:hover {
   height: 55px;
   border-bottom: 1px solid #ffffff;
 }
-
+/*---------------------------------------- Main section ----------------------------------  */
 main {
   overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  display: inline-block;
+  padding-right: 20px;
+  font-family: "Teko", sans-serif;
+}
+h1:hover,
+h2:hover {
+  color: #000000;
+  font-size: 3rem;
+  transition-property: font-size;
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
+
+.main-text {
+  font-size: 5rem;
+  font-weight: 300;
+  display: inline-block;
+  padding-right: 20px;
+  font-family: "Teko", sans-serif;
+  transition: 1s ease;
+}
+
+.main-text:hover {
+  color: rgb(245, 245, 189);
+  font-size: 7rem;
+  transition-property: font-size;
+  transition-duration: 0.8s;
 }
 
 #main-wrapper {
@@ -123,16 +125,6 @@ main {
   transition: opacity 0.5s;
 }
 
-#about {
-    display: block;
-    height: 100vh;
-    background: #b1f1e1;
-    border-right: solid 1px #ffffff;
-    border-left: solid 1px #ffffff;
-    margin: 100px 28px;
-    padding: 50px 28px;
-}
-
 .arrow-down {
   display: inline-block;
   width: 0;
@@ -142,18 +134,10 @@ main {
   border-color: transparent transparent #fff transparent;
 }
 
-
-
-
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   font-size: 124px;
   animation: pulse 2s ease-in-out infinite;
-
 }
 
 @keyframes pulse {
@@ -213,7 +197,20 @@ main {
   color: rgb(71, 71, 71);
 }
 
-#title {
-  transition: ease .5s;
+/*--------------------------------------------- about section ------------------------------------*/
+#about-section {
+  display: block;
+  width: auto;
+  height: 80vh;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
-
+#about {
+  display: block;
+  height: 100vh;
+  background: #b1f1e1;
+  border-right: solid 1px #ffffff;
+  border-left: solid 1px #ffffff;
+  margin: 100px 28px;
+  padding: 50px 28px;
+}
