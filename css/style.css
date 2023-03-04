@@ -22,6 +22,9 @@ body {
   transition-duration: 0.8s;
   cursor: pointer;
 }
+#name-nav {
+  transition: 0.5s;
+}
 
 h1,
 h2 {
@@ -30,7 +33,6 @@ h2 {
   display: inline-block;
   padding-right: 20px;
   font-family: "Teko", sans-serif;
-  transition: 1s ease;
 }
 h1:hover,
 h2:hover {
@@ -73,7 +75,7 @@ a {
   text-decoration: none;
 }
 a {
-  transition: 1s ease;
+  transition: .5s ease;
 }
 .nav-item {
   display: inline-block;
@@ -198,6 +200,7 @@ main {
 
 #about-me-heading {
   font-size: 8rem;
+  transition: ease 1s;
 }
 #about-me-heading:hover {
   color: #000000;
@@ -208,5 +211,9 @@ main {
 }
 #about-me-summary {
   color: rgb(71, 71, 71);
+}
+
+#title {
+  transition: ease .5s;
 }
 
