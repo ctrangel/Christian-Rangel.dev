@@ -1,0 +1,5 @@
+TODO:
+Add comments and fixformatting for readability clean up code
+Add cards to about page
+Create contact page and footer
+Add js function to make name pulse when arrow is clicked 
