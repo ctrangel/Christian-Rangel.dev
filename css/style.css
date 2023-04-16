@@ -214,3 +214,16 @@ h2:hover {
   margin: 100px 28px;
   padding: 50px 28px;
 }
+
+/* -------------------------------------------- media for mobile devices-------------------------- */
+
+@media screen and (max-width: 425px) {
+  #nav-bar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline;
+  }
+  
+  
+}
