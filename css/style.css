@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 body {
@@ -217,13 +217,55 @@ h2:hover {
 
 /* -------------------------------------------- media for mobile devices-------------------------- */
 
-@media screen and (max-width: 425px) {
-  #nav-bar {
+@media (max-width: 600px) {
+  /* Remove margins and paddings from navigation */
+  #nav-container {
     margin: 0;
     padding: 0;
-    width: 100%;
-    display: inline;
   }
   
+  #nav-bar {
+    margin: 0;
+    padding: 10px;
+  }
   
+  /* Adjust font sizes */
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  /* Center align the name and title in the navigation */
+  #name, #title {
+    text-align: center;
+  }
+  
+  /* Adjust spacing between elements */
+  #main-wrapper {
+    margin-top: 20px;
+  }
+  
+  .main-text {
+    margin-bottom: 10px;
+  }
+  
+  .side-img {
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust font size and spacing in the about section */
+  #about-me-summary {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust font size in the "Where I'm From" section */
+  #where-from-summary {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
